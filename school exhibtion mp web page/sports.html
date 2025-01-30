@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths Section</title>
+    <link rel="stylesheet" href="./section-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mathematics Exhibition</h1>
+        <p>Explore the world of numbers and equations</p>
+
+        <button class="audio-button" id="playAudio">Learn More!</button>
+        <br><br>
+
+        <div class="photo-grid">
+            <img src="./images/image1.jpg" alt="Maths Project 1">
+            <img src="./images/image2.jpg" alt="Maths Project 2">
+            <img src="./images/image3.jpg" alt="Maths Project 3">
+        </div>
+
+
+        <a href="./index.html" class="back-button">Back to Home</a>
+        <a href="./schoolmap.html" class="back-button">Explore More</a>
+
+        <audio id="audio5">
+            <source src="./Audio/AUDIO MATHS.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    
+    
+    
+        <script>
+            document.getElementById('playAudio').addEventListener('click', function() {
+                const audio = document.getElementById('audio5');
+                audio.play().then(() => {
+                    console.log('Audio is playing');
+                }).catch(error => {
+                    console.log('Playback error:', error);
+                });
+            });
+        </script>
+    
+
+    </div>
+</body>
+</html>
+
