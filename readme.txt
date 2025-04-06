@@ -1,0 +1,1 @@
+This is a school exhibition website using normal html,css,java
